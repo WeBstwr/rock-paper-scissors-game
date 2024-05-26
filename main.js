@@ -40,20 +40,23 @@ function determineWinner(computerChoice, playerChoice) {
 rockButton.addEventListener("click", () => {
   playerChoiceElement.innerText = "✊";
   const computerChoice = generateComputerChoice();
-  computerChoiceElement.innerText = computerChoice === "rock"? "✊" : computerChoice === "paper"? "✋" : "✌️";
+  computerChoiceElement.innerText =
+    computerChoice === "rock" ? "✊" : computerChoice === "paper" ? "✋" : "✌️";
   determineWinner(computerChoice, "rock");
 });
 
 paperButton.addEventListener("click", () => {
   playerChoiceElement.innerText = "✋";
   const computerChoice = generateComputerChoice();
-  computerChoiceElement.innerText = computerChoice === "rock"? "✊" : computerChoice === "paper"? "✋" : "✌️";
+  computerChoiceElement.innerText =
+    computerChoice === "rock" ? "✊" : computerChoice === "paper" ? "✋" : "✌️";
   determineWinner(computerChoice, "paper");
 });
 
 scissorsButton.addEventListener("click", () => {
   playerChoiceElement.innerText = "✌️";
   const computerChoice = generateComputerChoice();
-  computerChoiceElement.innerText = computerChoice === "rock"? "✊" : computerChoice === "paper"? "✋" : "✌️";
+  computerChoiceElement.innerText =
+    computerChoice === "rock" ? "✊" : computerChoice === "paper" ? "✋" : "✌️";
   determineWinner(computerChoice, "scissors");
 });
