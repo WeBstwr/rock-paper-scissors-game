@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="game-favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  <body>
+    <div id="app">
+      <div class="main-area">
+        <div class="game-header">
+          <p class="copyright">
+            &copy; 2024
+            <a href="https://www.linkedin.com/in/webster-safala-9147a2245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+              >webster</a
+            >
+          </p>
+          <p class="scoreboard" id="scoreboard">computer 0 0 player</p>
+        </div>
+        <div class="player-box" id="computer-box">
+          <p class="player-box--title">Computer</p>
+          <p class="emoji" id="computer-choice-emoji">✌️</p>
+        </div>
+        <p class="display-winner" id="display-winner">
+          currently draw
+        </p>
+        <div class="player-box" id="player-box">
+          <p class="player-box--title">Player</p>
+          <p class="emoji" id="player-choice-emoji">✌️</p>
+        </div>
+      </div>
+      
+      <div class="user-choices">
+        <button class="choice-button" id="rock-btn">
+          <p class="button-emoji">✊</p>
+          <p class="button-text">rock</p>
+        </button>
+        <button class="choice-button" id="paper-btn">
+          <p class="button-emoji">✋</p>
+          <p class="button-text">paper</p>
+        </button>
+        <button class="choice-button" id="scissors-btn">
+          <p class="button-emoji">✌️</p>
+          <p class="button-text">scissors</p>
+        </button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
